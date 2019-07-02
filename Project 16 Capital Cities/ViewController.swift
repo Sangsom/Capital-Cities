@@ -46,6 +46,12 @@ class ViewController: UIViewController {
                 latitude: 38.895111,
                 longitude: -77.036667),
             info: "Named after George himself.")
+
+        mapView.addAnnotation(london)
+        mapView.addAnnotation(oslo)
+        mapView.addAnnotation(paris)
+        mapView.addAnnotation(rome)
+        mapView.addAnnotation(washington)
     }
 
 
