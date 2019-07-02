@@ -16,6 +16,12 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "View",
+            style: .done,
+            target: self,
+            action: #selector(changeMapView))
+
         let london = Capital(
             title: "London",
             coordinate: CLLocationCoordinate2D(
@@ -88,6 +94,33 @@ class ViewController: UIViewController, MKMapViewDelegate {
 
         let ac = UIAlertController(title: placeName, message: placeInfo, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
+        present(ac, animated: true)
+    }
+
+    @objc func changeMapView() {
+        let ac = UIAlertController(
+            title: "Map View",
+            message: "Please select how you want to view map.",
+            preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Hybrid", style: .default, handler: { action in
+            self.mapView.mapType = .hybrid
+        }))
+        ac.addAction(UIAlertAction(title: "Hybrid Flyover", style: .default, handler: { action in
+            self.mapView.mapType = .hybridFlyover
+        }))
+        ac.addAction(UIAlertAction(title: "Muted Standard", style: .default, handler: { action in
+            self.mapView.mapType = .mutedStandard
+        }))
+        ac.addAction(UIAlertAction(title: "Satellite", style: .default, handler: { action in
+            self.mapView.mapType = .satellite
+        }))
+        ac.addAction(UIAlertAction(title: "Satellite Flyover", style: .default, handler: { action in
+            self.mapView.mapType = .satelliteFlyover
+        }))
+        ac.addAction(UIAlertAction(title: "Standard", style: .default, handler: { action in
+            self.mapView.mapType = .standard
+        }))
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(ac, animated: true)
     }
 }
