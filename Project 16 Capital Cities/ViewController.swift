@@ -57,12 +57,29 @@ class ViewController: UIViewController, MKMapViewDelegate {
                 longitude: -77.036667),
             info: "Named after George himself.",
             url: URL(string: "https://en.wikipedia.org/wiki/Washington%2C_D.C.")!)
+        let riga = Capital(
+            title: "Riga",
+            coordinate: CLLocationCoordinate2D(
+                latitude: 56.948889,
+                longitude: 24.106389),
+            info: "Riga began to develop as a centre of Viking trade during the early Middle Ages.",
+            url: URL(string: "https://en.wikipedia.org/wiki/Riga")!)
+        let tallin = Capital(
+            title: "Tallin",
+            coordinate: CLLocationCoordinate2D(
+                latitude: 59.437222,
+                longitude: 24.745278),
+            info: "Tallinn, first mentioned in 1219, received city rights in 1248 but the earliest human settlements date back 5,000 years.",
+            url: URL(string: "https://en.wikipedia.org/wiki/Tallinn")!)
+        let vilnius = Capital(
+            title: "Vilnius",
+            coordinate: CLLocationCoordinate2D(
+                latitude: 54.683333,
+                longitude: 25.283333),
+            info: "Vilnius is classified as a Gamma global city according to GaWC studies.",
+            url: URL(string: "https://en.wikipedia.org/wiki/Vilnius")!)
 
-        mapView.addAnnotation(london)
-        mapView.addAnnotation(oslo)
-        mapView.addAnnotation(paris)
-        mapView.addAnnotation(rome)
-        mapView.addAnnotation(washington)
+        mapView.addAnnotations([london, oslo, paris, rome, washington, riga, tallin, vilnius])
     }
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
