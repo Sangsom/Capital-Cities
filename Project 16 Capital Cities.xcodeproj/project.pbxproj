@@ -13,6 +13,7 @@
 		1B4507F422CB30B30058EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B4507F322CB30B30058EE1E /* Assets.xcassets */; };
 		1B4507F722CB30B30058EE1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B4507F522CB30B30058EE1E /* LaunchScreen.storyboard */; };
 		1B4507FF22CB32A10058EE1E /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4507FE22CB32A10058EE1E /* Capital.swift */; };
+		1B45080122CB630D0058EE1E /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B45080022CB630D0058EE1E /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1B4507F622CB30B30058EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B4507F822CB30B30058EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4507FE22CB32A10058EE1E /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		1B45080022CB630D0058EE1E /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1B4507F322CB30B30058EE1E /* Assets.xcassets */,
 				1B4507F522CB30B30058EE1E /* LaunchScreen.storyboard */,
 				1B4507F822CB30B30058EE1E /* Info.plist */,
+				1B45080022CB630D0058EE1E /* DetailsViewController.swift */,
 			);
 			path = "Project 16 Capital Cities";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1B4507EF22CB30B30058EE1E /* ViewController.swift in Sources */,
 				1B4507ED22CB30B30058EE1E /* AppDelegate.swift in Sources */,
 				1B4507FF22CB32A10058EE1E /* Capital.swift in Sources */,
+				1B45080122CB630D0058EE1E /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

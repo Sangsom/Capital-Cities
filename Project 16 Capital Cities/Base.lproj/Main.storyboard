@@ -43,6 +43,37 @@
             </objects>
             <point key="canvasLocation" x="916" y="783"/>
         </scene>
+        <!--Details View Controller-->
+        <scene sceneID="2dD-Xg-ebe">
+            <objects>
+                <viewController storyboardIdentifier="Details" id="Yds-FA-bcP" customClass="DetailsViewController" customModule="Project_16_Capital_Cities" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fBy-fB-EmP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gc2-MK-ZMO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gc2-MK-ZMO" firstAttribute="leading" secondItem="QSZ-rg-Ux7" secondAttribute="leading" id="Aar-Sw-gOt"/>
+                            <constraint firstItem="QSZ-rg-Ux7" firstAttribute="trailing" secondItem="Gc2-MK-ZMO" secondAttribute="trailing" id="CcI-DW-RaU"/>
+                            <constraint firstItem="Gc2-MK-ZMO" firstAttribute="top" secondItem="QSZ-rg-Ux7" secondAttribute="top" id="JtW-pe-aAB"/>
+                            <constraint firstItem="QSZ-rg-Ux7" firstAttribute="bottom" secondItem="Gc2-MK-ZMO" secondAttribute="bottom" id="WhG-nR-n3i"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QSZ-rg-Ux7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m88-cj-0sm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725" y="783"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lfd-qD-Hvg">
             <objects>
